@@ -1,0 +1,1 @@
+<div class="text-xl font-bold mb-5 uppercase border-b border-black"><slot /></div>
