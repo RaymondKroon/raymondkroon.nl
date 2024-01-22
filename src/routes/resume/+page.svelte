@@ -40,7 +40,7 @@
 	<title>Raymond Kroon - Resume</title>
 </svelte:head>
 
-<article class="grid grid-cols-1 md:grid-cols-3 gap-10 font-mono container max-w-screen-xl p-10 bg-white rounded-2xl my-20">
+<article class="container max-w-screen-md mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 font-mono p-10 bg-white rounded-2xl my-20">
 
 	<section class="col-span-full flex justify-evenly">
 		<div class="border-2 border-black px-20 py-6 mb-6">

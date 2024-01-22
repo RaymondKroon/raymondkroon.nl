@@ -3,7 +3,12 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: { 'resume': ["Montserrat-Regular", "serif"] },
-    extend: {},
+    extend: {
+      screens: {
+        print: { raw: 'print' },
+        screen: { raw: 'screen' },
+      },
+    },
   },
   plugins: [],
 }
