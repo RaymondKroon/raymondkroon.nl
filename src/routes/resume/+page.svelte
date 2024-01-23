@@ -43,7 +43,7 @@
 
 <article
 	class="container max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-3 print:grid-cols-3
-	gap-10 font-mono p-10 print:p-0 rounded-2xl my-20s screen:bg-off-white" >
+	gap-10 font-mono p-10 print:p-0 rounded-2xl my-20s screen:bg-off-white screen:drop-shadow-[0_10px_10px_rgba(0,0,0,.7)]" >
 
 	<section class="col-span-full flex justify-evenly">
 		<div class="border-2 border-theme-2 px-20 py-6 mb-6">

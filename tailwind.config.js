@@ -5,7 +5,7 @@ export default {
     fontFamily: {  },
     extend: {
       colors: {
-        "off-white": '#fcf5ea',
+        "off-white": '#f7e7ce',
         theme : {
           4: '#126973',
           3: '#618C74',
