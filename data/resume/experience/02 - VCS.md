@@ -2,7 +2,7 @@
 company: VCS Energy & ICT
 companySlug: vcs
 jobTitle: IT Consulting
-timeframe: Nov 2006 → Jun 2008
+period: Nov 2006 → Jun 2008
 current: false
 location: NL
 ---

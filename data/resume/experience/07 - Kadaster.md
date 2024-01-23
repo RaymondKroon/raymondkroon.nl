@@ -2,7 +2,7 @@
 company: Kadaster
 companySlug: kadaster
 jobTitle: IT Architect
-timeframe: Jan 2017 → Jan 2019
+period: Jan 2017 → Jan 2019
 current: false
 location: NL
 ---

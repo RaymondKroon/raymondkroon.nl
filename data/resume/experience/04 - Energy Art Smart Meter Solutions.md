@@ -2,7 +2,7 @@
 company: Energy Art Consulting / Smart Meter Solutions
 companySlug: energyart
 jobTitle: Business Development
-timeframe: Jan 2009 → Jun 2011
+period: Jan 2009 → Jun 2011
 current: false
 location: NL
 ---

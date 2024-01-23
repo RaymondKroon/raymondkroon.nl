@@ -2,7 +2,7 @@
 company: Kadaster (AkteAI)
 companySlug: kadaster
 jobTitle: Team lead / founder AkteAI
-timeframe: Jan 2019 → Oct 2020
+period: Jan 2019 → Oct 2020
 current: false
 location: NL
 ---

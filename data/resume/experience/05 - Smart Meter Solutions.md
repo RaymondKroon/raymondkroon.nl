@@ -2,7 +2,7 @@
 company: Smart Meter Solutions
 companySlug: sms
 jobTitle: Software Engineer
-timeframe: Jun 2011 → Jul 2013
+period: Jun 2011 → Jul 2013
 current: false
 location: NL
 ---

@@ -2,7 +2,7 @@
 company: Kadaster (PDOK.nl)
 companySlug: kadaster
 jobTitle: Lead software Engineer
-timeframe: Jul 2013 → Jan 2017
+period: Jul 2013 → Jan 2017
 current: false
 location: NL
 ---

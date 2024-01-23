@@ -2,7 +2,7 @@
 company: Energy Art Consulting
 companySlug: energyart
 jobTitle: IT Consulting & Project Management
-timeframe: Nov 2006 → Jun 2008
+period: Jun 2008 → Jan 2011
 current: false
 location: NL
 ---

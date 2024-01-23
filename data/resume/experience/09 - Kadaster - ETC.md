@@ -2,7 +2,7 @@
 company: Kadaster (Emerging Technology Center)
 companySlug: kadaster
 jobTitle: Innovation Architect
-timeframe: Oct 2018
+period: Oct 2018
 current: true
 location: NL
 ---

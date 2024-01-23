@@ -18,7 +18,7 @@
 
 <StaticDisco />
 
-<main class="container mx-auto screen:drop-shadow-[0_10px_10px_rgba(0,0,0,.5)]">
+<main class="container mx-auto screen:drop-shadow-[0_10px_10px_rgba(0,0,0,.7)]">
 	<slot />
 </main>
 
