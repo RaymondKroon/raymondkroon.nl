@@ -4,10 +4,31 @@
 
 @layer base {
     a {
-        @apply text-blue-50
+        @apply text-theme-3
     }
 
-    body {
-        @apply bg-gray-100
-    }
+    /*body {*/
+    /*    @apply bg-theme-1*/
+    /*}*/
 }
+
+/*!* Color Theme Swatches in Hex *!*/
+/*.Architectuur-1-hex { color: #126973; }*/
+/*.Architectuur-2-hex { color: #618C74; }*/
+/*.Architectuur-3-hex { color: #F2B56B; }*/
+/*.Architectuur-4-hex { color: #F26938; }*/
+/*.Architectuur-5-hex { color: #A65341; }*/
+
+/*!* Color Theme Swatches in RGBA *!*/
+/*.Architectuur-1-rgba { color: rgba(18, 105, 114, 1); }*/
+/*.Architectuur-2-rgba { color: rgba(96, 140, 115, 1); }*/
+/*.Architectuur-3-rgba { color: rgba(242, 181, 106, 1); }*/
+/*.Architectuur-4-rgba { color: rgba(242, 105, 55, 1); }*/
+/*.Architectuur-5-rgba { color: rgba(165, 83, 64, 1); }*/
+
+/*!* Color Theme Swatches in HSLA *!*/
+/*.Architectuur-1-hsla { color: hsla(185, 72, 26, 1); }*/
+/*.Architectuur-2-hsla { color: hsla(146, 18, 46, 1); }*/
+/*.Architectuur-3-hsla { color: hsla(33, 84, 68, 1); }*/
+/*.Architectuur-4-hsla { color: hsla(16, 87, 58, 1); }*/
+/*.Architectuur-5-hsla { color: hsla(11, 43, 45, 1); }*/

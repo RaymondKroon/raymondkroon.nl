@@ -1,8 +1,8 @@
 <script>
 	import '../app.css';
 	import { description, keywords, title } from '$lib/meta';
-	// import Disco from '$lib/backgrounds/Disco.svelte';
-	import StaticDisco from '$lib/backgrounds/StaticDisco.svelte';
+	// import StaticDisco from '$lib/backgrounds/StaticDisco.svelte';
+	import Stripes from '$lib/backgrounds/Stripes.svelte';
 </script>
 
 <svelte:head>
@@ -16,11 +16,14 @@
 	<title>{title}</title>
 </svelte:head>
 
-<StaticDisco />
+<body class="mx-auto m-10">
 
-<main class="container mx-auto screen:drop-shadow-[0_10px_10px_rgba(0,0,0,.7)]">
+<Stripes/>
+
+<div class="screen:drop-shadow-[0_10px_10px_rgba(0,0,0,.7)]">
 	<slot />
-</main>
+</div>
+</body>
 
 <!--<style lang="postcss">-->
 <!--    :global(body) {-->
