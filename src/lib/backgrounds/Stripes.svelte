@@ -15,14 +15,16 @@
 
 		totalLines = linesWidth;
 
-		const colors = [
+		let colors = [
 			'fill-theme-1',
 			'fill-theme-2',
 			'fill-theme-3',
 			'fill-theme-4',
-			'fill-theme-5'
-
+			'fill-theme-5',
 		];
+
+		colors = colors.concat(colors.slice(1,4).reverse());
+
 		lines = Array(totalLines).fill(0).map((_, i) => ({ class: colors[i % colors.length] }));
 	}
 
