@@ -11,5 +11,10 @@ export default defineConfig({
 		alias: {
 			'$data': path.resolve('./data')
 		}
+	},
+	server: {
+		fs: {
+			allow: ['./data']
+		}
 	}
 });

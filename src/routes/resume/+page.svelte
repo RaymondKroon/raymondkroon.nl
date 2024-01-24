@@ -2,14 +2,18 @@
 	import SectionTitle from '$lib/resume/SectionTitle.svelte';
 	import type { WorkExperience } from '$lib/resume/api';
 	import Icon from '$lib/Icon.svelte';
-	import SvelteMarkdown from 'svelte-markdown';
-	import StaticDisco from '$lib/backgrounds/StaticDisco.svelte';
 
-	export let data: {
-		experience: WorkExperience[];
-	};
 
-	let { experience } = data;
+	const paths = import.meta.glob('/data/resume/experience/*.md', { eager: true });
+	const experience: WorkExperience[] = [];
+
+	for (const path in paths) {
+		const file = paths[path] as any;
+		experience.push({ ...file.metadata, description: file.default });
+	}
+
+	experience.reverse();
+
 
 	let education = [
 		{
@@ -43,7 +47,7 @@
 
 <article
 	class="container max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-3 print:grid-cols-3
-	gap-10 font-mono p-10 print:p-0 rounded-2xl my-20s screen:bg-off-white screen:drop-shadow-[0_10px_10px_rgba(0,0,0,.7)]" >
+	gap-10 font-mono p-10 print:p-0 rounded-2xl my-20s screen:bg-off-white screen:drop-shadow-[0_10px_10px_rgba(0,0,0,.7)]">
 
 	<section class="col-span-full flex justify-evenly">
 		<div class="border-2 border-theme-2 px-20 py-6 mb-6">
@@ -73,7 +77,7 @@
 
 					{#if entry.description !== ''}
 						<div class="description">
-							<SvelteMarkdown source="{entry.description}" />
+							<svelte:component this={entry.description} />
 						</div>
 					{/if}
 				</div>
@@ -93,7 +97,7 @@
 			<SectionTitle>Skills</SectionTitle>
 			<div class="text-sm">
 				{#each ["Grasping new concepts quickly", "Agile software development", "CI/CD", "Domain Driven Design", "Process design",
-				"Leadership", "GitOps", "Machine Learning", "Artificial Intelligence"].sort() as skill}
+					"Leadership", "GitOps", "Machine Learning", "Artificial Intelligence"].sort() as skill}
 				<span class=" mr-1.5 screen:mb-1 p-0.5 inline-block">
 					{skill}
 				</span>
@@ -101,7 +105,7 @@
 			</div>
 			<div class="text-sm">
 				{#each ["Kubernetes", "Tekton", "OpenShift", "Golang", "Rust", "Python", "JVM Based languages", "Typescript", "Linux", "Temporal (workflows)",
-				"Microsoft Azure"].sort() as skill}
+					"Microsoft Azure"].sort() as skill}
 				<span class=" mr-1 screen:mb-1 p-0.5 inline-block">
 					{skill}
 				</span>
@@ -153,8 +157,8 @@
         size: A4 portrait;
     }
 
-		@page :first {
-				margin: 0cm 1cm 1cm 1cm;
-		}
+    @page :first {
+        margin: 0cm 1cm 1cm 1cm;
+    }
 
 </style>
