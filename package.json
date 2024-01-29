@@ -43,6 +43,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource-variable/manrope": "5.0.18",
+		"@fontsource-variable/montserrat": "5.0.16",
 		"@sveltejs/adapter-static": "^3.0.1"
 	}
 }

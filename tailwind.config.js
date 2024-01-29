@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {  },
     extend: {
+      fontFamily: {'sans': ['"Montserrat Variable"', ...defaultTheme.fontFamily.sans]},
       colors: {
         "off-white": '#f7e7ce',
         theme : {

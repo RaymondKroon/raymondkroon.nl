@@ -9,8 +9,8 @@ location: NL
 ---
 I am responsible for the NoOps strategy at Kadaster. NoOps is about reducing unnecessary
 Ops and improving the overall Developer Experience. DevOps
-teams at Kadaster use pretty modern tech stacks. Because platform support
-is lacking, every team has to a lot of extra work beside operating their own
+teams at Kadaster use modern tech stacks and, because platform support
+is lacking, every team has to do a lot of extra work beside just operating their own
 applications.
 
-I am responsible for creating and migrating to the Managed Application Platform. This platform is a crucial part of the cloud strategy and the migration to our new datacenter.
+Part of the project is creating and migrating to the Managed Application Platform. This platform is a crucial part of the cloud strategy and the migration to our new datacenter.
