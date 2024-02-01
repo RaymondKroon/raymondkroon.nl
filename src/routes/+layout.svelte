@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import { description, keywords, title } from '$lib/meta';
+	import { description, keywords, title } from '$lib/config';
 	// import StaticDisco from '$lib/backgrounds/StaticDisco.svelte';
 	import Stripes from '$lib/backgrounds/Stripes.svelte';
 </script>
