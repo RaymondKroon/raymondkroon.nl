@@ -1,13 +1,8 @@
 <script lang="ts">
-	import { type Article, getArticles } from '$lib/articles/api';
-	import { onMount } from 'svelte';
+	import { type Article } from '$lib/articles/api';
 	import ArticleMetadata from '$lib/articles/ArticleMetadata.svelte';
 
-	let articles: Article[] = [];
-
-	onMount(async () => {
-			articles = await getArticles();
-	});
+	export let articles: Article[] = [];
 
 </script>
 

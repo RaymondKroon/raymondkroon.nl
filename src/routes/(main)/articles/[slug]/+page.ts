@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit'
-import { getArticle, getArticles } from '$lib/articles/api';
+import { articles, getArticle } from '$lib/articles/api';
 
 export async function load({ params }) {
 	try {
@@ -12,7 +12,7 @@ export async function load({ params }) {
 }
 
 export async function entries() {
-	let entries = (await getArticles()).map(a =>  ({slug: a.slug}))
+	let entries = articles.map(a =>  ({slug: a.slug}))
 	console.log(entries);
 	return entries;
 }
