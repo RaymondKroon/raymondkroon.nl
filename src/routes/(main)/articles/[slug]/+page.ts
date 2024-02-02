@@ -13,6 +13,5 @@ export async function load({ params }) {
 
 export async function entries() {
 	let entries = articles.map(a =>  ({slug: a.slug}))
-	console.log(entries);
 	return entries;
 }

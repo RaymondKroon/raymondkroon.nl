@@ -7,7 +7,7 @@
 
 <article>
 	<header class="mb-5">
-		<div class="text-theme-4 text-3xl font-bold mb-1">{data.meta.title}</div>
+		<h1 class="mb-1">{data.meta.title}</h1>
 		<ArticleMetadata article="{data.meta}" />
 	</header>
 	<div class="prose">

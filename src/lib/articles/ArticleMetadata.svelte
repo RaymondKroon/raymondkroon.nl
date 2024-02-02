@@ -9,5 +9,5 @@
 
 <div class="text-theme-4 text-sm mb-2 flex flex-row gap-4">
 	<div>{formatDate(article.date)}</div>
-	<Tags tags={article.categories} />
+	<Tags tags={article.tags} />
 </div>

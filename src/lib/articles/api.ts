@@ -1,20 +1,20 @@
 import { error } from '@sveltejs/kit';
 
-export type Categories = string
-
+export type Tag = string;
 export type Article = {
 	title: string
 	slug: string
 	date: string
-	categories: Categories[]
+	tags: string[]
 	published: boolean
 	preview: string
 	previewHtml: string
 	isDirPost: boolean
 }
 
-function getArticles(): Article[] {
+function loadArticles(): [Article[], Tag[]] {
 	let articles: Article[] = [];
+	let tags = new Set<Tag>();
 
 	const paths = import.meta.glob('/data/articles/**/*.md', { eager: true });
 
@@ -26,8 +26,11 @@ function getArticles(): Article[] {
 
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const metadata = file.metadata as Omit<Article, 'slug'>;
-			const post = { ...metadata, slug, isDirPost } satisfies Article;
-			post.published && articles.push(post);
+			const article = { ...metadata, slug, isDirPost } satisfies Article;
+			if (article.published) {
+				article.tags.forEach(tag => tags.add(tag));
+				articles.push(article);
+			}
 		}
 	}
 
@@ -35,10 +38,10 @@ function getArticles(): Article[] {
 		new Date(second.date).getTime() - new Date(first.date).getTime()
 	);
 
-	return articles;
+	return [articles, []];
 }
 
-export const articles = getArticles();
+export const [articles, tags] = loadArticles();
 
 
 export async function getArticle(slug: string): Promise<{ meta: Article, content: any }> {
