@@ -2,7 +2,8 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
 import preview, { htmlFormatter, textFormatter } from 'remark-preview'
-import path from 'path';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
@@ -19,6 +20,7 @@ const mdsvexOptions = {
 			}
 		)
 	],
+	rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, { behavior: 'wrap' }]],
 }
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -29,6 +31,9 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 
 	kit: {
+		alias: {
+			// $plugins: path.resolve('./src/lib/articles/plugins'),
+		},
 		adapter: adapter(
 			{
 				// default options are shown
