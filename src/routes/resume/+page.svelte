@@ -126,7 +126,7 @@
 					<div class="title mb-1">
 						<span class="block font-semibold text-theme-4">{entry.name}</span>
 						<small class="text-gray-500 print:text-gray-400">
-							{#if entry.where}{entry.where} |{/if}{entry.period}</small>
+							{#if entry.where}{entry.where} | {/if}{entry.period}</small>
 					</div>
 				</div>
 			{/each}
