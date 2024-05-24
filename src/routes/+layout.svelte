@@ -16,7 +16,7 @@
 	<title>{title}</title>
 </svelte:head>
 
-<body class="mx-auto m-10">
+<body class="mx-auto m-10 bg-theme-4">
 
 <Stripes/>
 
