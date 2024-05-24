@@ -25,6 +25,7 @@ export default {
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
+            maxWidth: '80ch',
             // '--tw-prose-body': theme('colors.pink[800]'),
             '--tw-prose-headings': theme('colors.theme.4'),
             // '--tw-prose-lead': theme('colors.pink[700]'),
