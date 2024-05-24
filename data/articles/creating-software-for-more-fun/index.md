@@ -18,11 +18,11 @@ Over time, we changed the rules a bit:
 - rounds with no trump
 - instead of the same order of trump, we made it random
 
-Scorekeeping was just pen and paper on a template made in Google sheets. It was mostly me who kept the scores, and it was ok, but it could be better.
+Score keeping was just pen and paper on a template made in Google sheets. It was mostly me who kept the scores, and it was ok, but it could be better.
 We tried using Excel on a tablet, but that was not a good experience. So we stuck with pen and paper.
 
 ## Making an app
-Over the time we also played with the idea of an app. But I have an Android and my brother an Iphone. Also, the idea of making an Android app was no fun to me. 
+Over the time we also played with the idea of an app. But I have an Android and my brother an Iphone. Also, the idea of making any native app was no fun to me. 
 
 Last year I reconsidered the idea. Making score keeping less work would make it more fun for me. I made a list of requirements:
 - Works on a phone
@@ -48,4 +48,4 @@ The app was an instant success. We are still using it every time we play. Over t
 *You don't always have to make money with writing software. It also doesn't have to be useful for anyone else. It can just be about making game night more fun.
 And you might learn a thing or two while creating it.*
 
-You can have a look at the code on [GitHub](https://github.com/RaymondKroon/heen-en-terug-score-app) and the [app](https://raymond.k3n.nl/heen-en-terug-score-app/)
+You can have a look at the code on [GitHub](https://github.com/RaymondKroon/heen-en-terug-score-app) and the [app](https://raymond.k3n.nl/heen-en-terug-score-app/).
