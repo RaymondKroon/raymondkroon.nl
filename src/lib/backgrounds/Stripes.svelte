@@ -2,18 +2,17 @@
 	import { onMount } from 'svelte';
 
 	let lines: { class: string }[] = [];
-	const lineWidth = 31;
+	const lineWidth = 30;
 	let totalLines = 0;
 	let linesWidth = 0;
-	let documentHeight = 0;
 	let screenWidth = 0;
 
 	function generateBg() {
 		screenWidth = window.innerWidth;
-		documentHeight = document.documentElement.scrollHeight;
 
-		linesWidth = Math.min(990, screenWidth);
-		totalLines = Math.ceil(linesWidth / lineWidth);
+		linesWidth = Math.min(990, screenWidth - 50);
+		totalLines = Math.floor(linesWidth / lineWidth);
+		linesWidth = totalLines * lineWidth;
 
 		let colors = [
 			'fill-theme-1',
@@ -51,10 +50,8 @@
 
 <svelte:window on:resize="{generateBg}" />
 
-{#if screenWidth >= 1024}
-<svg class="mx-auto" width="{linesWidth}" height="{documentHeight}">
+<svg class="mx-auto" width="{linesWidth}" height="100">
 	{#each lines as line, i}
-		<rect class={line.class} x={i * lineWidth} y="0" width={lineWidth} height="{documentHeight}" />
+		<rect class={line.class} x={i * lineWidth} y="0" width={lineWidth} height="100" />
 	{/each}
 </svg>
-{/if}
