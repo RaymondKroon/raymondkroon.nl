@@ -6,7 +6,11 @@
 
 @layer base {
     a {
-        @apply text-theme-3
+        @apply text-theme-4 hover:text-theme-2;
+    }
+
+    h1 {
+        @apply text-theme-4 text-3xl font-bold;
     }
 
     /*body {*/
