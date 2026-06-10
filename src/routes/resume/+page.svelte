@@ -58,6 +58,18 @@
 	<section
 		class="col-span-1 md:col-span-2 print:col-span-2 md:row-span-4 print:row-span-4 row-start-4 md:row-start-2 print:row-start-2">
 		<SectionTitle>Employment history</SectionTitle>
+		<div class="flex items-center justify-end gap-4 text-xs text-gray-400 mb-2">
+			<span class="flex items-center gap-1">
+				<span class="w-[16px] flex items-center justify-center current legend">
+					<Icon name="circle" />
+				</span> Current position
+			</span>
+			<span class="flex items-center gap-1">
+				<span class="w-[16px] flex items-center justify-center legend">
+					<Icon name="circle" />
+				</span> Previous position
+			</span>
+		</div>
 		{#each experience as entry, i}
 			<div class="experience flex flex-row break-inside-avoid">
 				<div class="timeline flex flex-col items-center py-1.5 mr-5 text-theme-2">
@@ -145,11 +157,19 @@
 
     .current :global(svg) {
         padding: 2px;
-        background: white;
+        /*background: white;*/
         border: 1px solid;
         border-radius: 50%;
         @apply border-theme-2 fill-theme-2;
     }
+
+		.legend :global(svg) {
+        @apply text-gray-400 border-gray-400
+		}
+
+		.current.legend :global(svg) {
+        @apply text-gray-400 border-gray-400 fill-gray-400;
+		}
 
     @page {
         padding: 0;
